@@ -1,3 +1,16 @@
+= I18n for JavaScript - An ExamTime Fork
+
+We have decided to fork this library for a number of reasons:
+- We are currently running against a particular commit for this gem:
+    f07f0d8d614a607ec1a39d94a7013b805f8964a2
+  as more recent versions are giving us UTF-8 errors.
+- We want to apply some slightly different fallback logic, namely I18n.locale 'ab-CD' 
+  should fallback to 'ab' before falling back to I18n.defaultLocale
+- We are considering experimenting with a more prescriptive way of loading JS translations.
+  As we realise that we don't need to load ALL the translations ALL the time, we can 
+  potentially improve page size by only loading the translations specifically required on 
+  the client side.
+
 = I18n for JavaScript
 
 It's a small library to provide the Rails I18n translations on the Javascript.
