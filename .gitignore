@@ -3,3 +3,5 @@ coverage
 pkg
 spec/tmp
 .DS_Store
+.bundle
+bin/
